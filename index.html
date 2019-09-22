@@ -45,10 +45,13 @@
             var wz1 = document.getElementById("wz1").value;
             var wz2 = document.getElementById("wz2").value;
             var wz3 = document.getElementById("wz3").value;
+            var select = document.getElementById("opt");
+            var index = select.selectedIndex;
+            var time = select.options[index].value;
 
             mdui.dialog({
                 title: '请以下内容复制到新建的' + idn + '.txt文件，并用电子教室提交。',
-                content: anwser + '</br>' + wz1 + '</br>' + wz2 + '</br>' + wz3 + '</br>',
+                content: anwser + '</br>' + wz1 + '</br>' + wz2 + '</br>' + wz3 + '</br>' + time,
             });
             document.forms[0].target = "rfFrame"
         }
@@ -1236,9 +1239,11 @@ var a=new Date().getMonth();</pre>
                             </pre>
                         </div>
 
-                        <div class="mdui-textfield mdui-textfield-floating-label ">
-                            <textarea class="mdui-textfield-input " rows="36 "></textarea>
-                            <div class="mdui-textfield-helper">请在上方输入</div>
+                        <div class="mdui-typo">
+                            <blockquote>
+                                <p>因为考虑到大家用的语言有所不同，这道题请直接复制源代码到‘语言’+‘考号’+‘.txt’的文件，然后用电子教室提交。</p>
+                                <footer>感谢大家参加本次考核。(｀・ω・´)</footer>
+                            </blockquote>
                         </div>
 
                     </div>
