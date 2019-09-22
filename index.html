@@ -16,8 +16,7 @@
     <link href="material/css&js/mdui.css" rel="stylesheet">
     <script src="material/css&js/mdui.js"></script>
     <script scr="material/css&js/JQuery-3.4.1.min.js"></script>
-    <script>
-    </script>
+
 </head>
 
 <body style="background-color:silver;padding-bottom: 0%" class="mdui-theme-primary-deep-indigo mdui-theme-accent-deep-purple mdui-bottom-nav-fixed ">
@@ -51,7 +50,7 @@
                     <div style="width: auto;height:25px"></div>
                 </div>
 
-                <div class="mdui-col-xs-4 mdui-col-offset-xs-1">
+                <div class="mdui-col-xs-3 mdui-col-offset-xs-1">
 
                     <div class="mdui-textfield mdui-textfield-floating-label">
                         <label class="mdui-textfield-label">姓名</label>
@@ -63,221 +62,281 @@
                         <input class="mdui-textfield-input" type="id" />
                     </div>
 
-                    <div style="width: auto;height:25px"></div>
+                </div>
+
+                <div class="mdui-col-xs-7 mdui-col-offset-xs-1">
+
+                    <div style="width: auto;height:25px "></div>
+
+                    <div class="mdui-typo">
+                        <blockquote>
+                            <div class="mdui-typo-headline-opacity">每周可以使用电脑进行编程的时间</div>
+                        </blockquote>
+                    </div>
+
+                    <select class="mdui-select" id="opt" style="left: 30px;">
+                        <option value="min">less...</option>
+                        <option value="1">1h</option>
+                        <option value="2">2h</option>
+                        <option value="3">3h</option>
+                        <option value="4">4h</option>
+                        <option value="5">5h</option>
+                        <option value="6">6h</option>
+                        <option value="7">7h</option>
+                        <option value="8">8h</option>
+                        <option value="9">9h</option>
+                        <option value="10">10h</option>
+                        <option value="11">11h</option>
+                        <option value="12">12h</option>
+                        <option value="13">13h</option>
+                        <option value="14">14h</option>
+                        <option value="15">15h</option>
+                        <option value="16">16h</option>
+                        <option value="17">17h</option>
+                        <option value="18">18h</option>
+                        <option value="19">19h</option>
+                        <option value="20">20h</option>
+                        <option value="21">21h</option>
+                        <option value="22">22h</option>
+                        <option value="23">23h</option>
+                        <option value="24">24h</option>
+                        <option value="30">30h</option>
+                        <option value="36">36h</option>
+                        <option value="42">42h</option>
+                        <option value="48">48h</option>
+                        <option value="max">more...</option>
+                      </select>
+                    <script>
+                        var $$ = mdui.JQ;
+                        var inst = new mdui.Select('#opt', {
+                            position: 'bottom'
+                        });
+                        $$('#opt').on('closed.mdui.select', function() {
+                            mdui.snackbar({
+                                message: '请慎重填写时间！我们将根据你所填的时间，合理地分配你的任务！',
+                                position: 'top',
+                                buttonText: '我知道了',
+                                buttonColor: '#9999ff',
+                                timeout: '5000',
+                            });
+                        });
+                    </script>
+
+                    <div style="width: auto;height:25px "></div>
 
                 </div>
 
                 <div class="mdui-col-xs-10 mdui-col-offset-xs-1 ">
-                    <div class="mdui-typo-display-1">一、单项选择题（本大题共30小题，每小题2分，共60分）</div>
+                    <div class="mdui-typo-display-1 ">一、单项选择题（本大题共30小题，每小题2分，共60分）</div>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">1、吉吉国王的笔记本最近总是出问题，于是他想装一台台式机，下列吉吉国王所购买的设备中，哪一个属计算机硬件的组成部分？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">1、吉吉国王的笔记本最近总是出问题，于是他想装一台台式机，下列吉吉国王所购买的设备中，哪一个属计算机硬件的组成部分？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、美商海盗船（USCORSAIR）统治者铂金RGB DDR4台式机内存条 3600 128G（16GX8）（15999￥）
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz01" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、美商海盗船（USCORSAIR）统治者铂金RGB DDR4台式机内存条 3600 128G（16GX8）（15999￥）
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、英特尔/Intel 傲腾905P系列 U.2 2.5寸/AIC插卡式Pcie3.0固态硬盘 AIC Pcie插卡 1.5T （16999￥）
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz01" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、英特尔/Intel 傲腾905P系列 U.2 2.5寸/AIC插卡式Pcie3.0固态硬盘 AIC Pcie插卡 1.5T （16999￥）
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、微星（MSI）MEG X399/TR4 CREATION 创世神主板 （6999￥）
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz01" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、微星（MSI）MEG X399/TR4 CREATION 创世神主板 （6999￥）
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、三星 (SAMSUNG ) 48.8英寸 DQHD HDR 量子点 120HZ 可升降全接口 曲面电竞显示器（C49RG90SSC）
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">2、吉吉国王还买了一个AMD的CPU：线程撕裂着2990WX（13599￥），请问一下哪一个不是CPU的内部结构部分？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、散热单元
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、控制单元
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、逻辑单元
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、储存单元
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz01" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、三星 (SAMSUNG ) 48.8英寸 DQHD HDR 量子点 120HZ 可升降全接口 曲面电竞显示器（C49RG90SSC）
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">3、吉吉国王准备装操作系统了，以下哪个软件不是操作系统软件的名字？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">2、吉吉国王还买了一个AMD的CPU：线程撕裂着2990WX（13599￥），请问一下哪一个不是CPU的内部结构部分？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、Windows 10
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz02" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、散热单元
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、Linux
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz02" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、控制单元
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、Notepad
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz02" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、逻辑单元
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、Max OS
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">4、吉吉国王的台式机装完后，刚用移动硬盘把资料拷贝到新电脑上就突然断电了，以下设备中断电后仍然可以保存数据的是什么？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、硬盘
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、CPU一级缓存
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、GDDR5显存
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、RAM随机存取存储器
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz02" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、储存单元
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">5、后缀名能帮助电脑识别文件的种类从而正确地使用它们，windows中动态链接库文件（又称“应用程序拓展”）的后缀名是什么？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">3、吉吉国王准备装操作系统了，以下哪个软件不是操作系统软件的名字？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、exe
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz03" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、Windows 10
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、dll
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz03" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、Linux
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、psd
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz03" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、Notepad
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、swf
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">6、C++中有许多数据类型，以下哪个数据类型不是负数？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、int
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、unsigned int
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、long long
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、double
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz03" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、Max OS
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">7、信息竞赛对自主招生很有帮助，其中就有判断程序输出的题目，以下C++程序的输出值是什么？</div>
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">4、吉吉国王的台式机装完后，刚用移动硬盘把资料拷贝到新电脑上就突然断电了，以下设备中断电后仍然可以保存数据的是什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz04" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、硬盘
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz04" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、CPU一级缓存
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz04" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、GDDR5显存
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz04" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、RAM随机存取存储器
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">5、后缀名能帮助电脑识别文件的种类从而正确地使用它们，windows中动态链接库文件（又称“应用程序拓展”）的后缀名是什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz05" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、exe
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz05" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、dll
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz05" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、psd
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz05" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、swf
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">6、C++中有许多数据类型，以下哪个数据类型不是负数？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz06" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、int
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz06" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、unsigned int
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz06" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、long long
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz06" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、double
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">7、信息竞赛对自主招生很有帮助，其中就有判断程序输出的题目，以下C++程序的输出值是什么？</div>
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo ">
                         <pre>
 #include&lt;iostream&gt;
 using namespace std;
@@ -287,893 +346,883 @@ int main()
     return 0;
 }</pre>
                     </div>
-                    <ul class="mdui-list">
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、9
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz07" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、9
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、1001
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz07" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、1001
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、513
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz07" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、513
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、01001
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz07" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、01001
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">8、JavaScript 是世界上最流行的脚本语言，假设当前时间是2019年9月1日，以下JavaScript代码中a的值是什么？</div>
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">8、JavaScript 是世界上最流行的脚本语言，假设当前时间是2019年9月1日，以下JavaScript代码中a的值是什么？</div>
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo ">
                         <pre>
 var a=new Date().getMonth();</pre>
                     </div>
-                    <ul class="mdui-list">
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、7
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz08" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、7
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、8
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz08" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、8
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、9
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz08" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、9
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、10
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">9、错误总会发生！当执行 JavaScript 代码时，会发生各种错误。对于JavaScript异常的说法中，正确的是什么？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、catch 语句允许您创建自定义错误
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、throw语句允许您放弃处理该错误
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、try 语句使您能够测试代码块中的错误
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、error 对象的两个有用的属性：name 和 report
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz08" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、10
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">10、Python是一种代表简单主义思想的语言，但LZY却并不这么认为，对于Python中缩进的说法中，正确的是什么？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">9、错误总会发生！当执行 JavaScript 代码时，会发生各种错误。对于JavaScript异常的说法中，正确的是什么？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、缩进可以提高代码可读性，自己看得懂不一定要缩进。
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz09" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、catch 语句允许您创建自定义错误
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、缩进会增加代码长度，没必要。
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz09" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、throw语句允许您放弃处理该错误
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、缩不缩进都无所谓，看心情。
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz09" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、try 语句使您能够测试代码块中的错误
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、Python需要很严格地根据规范缩进。
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">11、Python 允许用户把目录当成模块看待。这样一来，目录中的不同模块文件，就变成了「包」里面的子模块，包的管理很让人头疼，以下哪个是Python的包管理工具？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、sys
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、os
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、request
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、pip
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz09" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、error 对象的两个有用的属性：name 和 report
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">12、Golang是一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。 Golang是哪个公司开发的？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">10、Python是一种代表简单主义思想的语言，但LZY却并不这么认为，对于Python中缩进的说法中，正确的是什么？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、Google
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz10" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、缩进可以提高代码可读性，自己看得懂不一定要缩进。
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、Microsoft
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz10" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、缩进会增加代码长度，没必要。
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、DJI
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz10" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、缩不缩进都无所谓，看心情。
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、Alibaba
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">13、Golang增加了切片(Slice)型的语言级支持，对于Go语言切片(Slice)下列说法错误的是什么？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、切片不需要说明长度。
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、一个切片在未初始化之前默认为null，长度为0。
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、`s := arr[startIndex:endIndex]`将arr中从下标startIndex到endIndex-1下的元素创建为一个新的切片。
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、如果想增加切片的容量，我们必须创建一个新的更大的切片并把原分片的内容都拷贝过来。
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz10" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、Python需要很严格地根据规范缩进。
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">14、用一条指令实现将寄存器BX和SI中的内容相加，结果送入AX中，这条指令是？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">11、Python 允许用户把目录当成模块看待。这样一来，目录中的不同模块文件，就变成了「包」里面的子模块，包的管理很让人头疼，以下哪个是Python的包管理工具？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、`ADD AX，[SI][BX]`
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz11" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、sys
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、`MOV AX，[BX+SI]`
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz11" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、os
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、`AND AX，[BX+SI]`
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz11" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、request
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、`LEA AX，[BX][SI]`
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">15、在8086汇编语言中，程序刚开始执行时，[CS:IP]指向？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、程序的最后一个语句
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、程序的数据段
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、程序的第一个语句
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、存储计算机IP地址的内存地址
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz11" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、pip
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">16、现在人们大都习惯使用图形化的操作界面(windows)，而一些高端程序员则喜欢使用Linux，请问在Linux中使用vim打开文件时，应按哪个键进入插入模式？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">12、Golang是一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。 Golang是哪个公司开发的？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、Ctrl
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz12" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、Google
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、tab
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz12" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、Microsoft
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、i
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz12" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、DJI
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、shift
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">17、最近ZZH在使用Linux的过程中看见了一个一个权限为0764的文件，他属于其他用户（非属主且属组）可以对它进行以下哪个操作？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、读
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、写
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、执行
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、修改
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz12" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、Alibaba
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">18、在Windows中只需“右键”->“新建”->“文件夹”即可新创建一个文件夹，在Linux中，哪条命令用于新建空文件夹？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">13、Golang增加了切片(Slice)型的语言级支持，对于Go语言切片(Slice)下列说法错误的是什么？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、ls
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz13" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、切片不需要说明长度。
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、cd
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz13" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、一个切片在未初始化之前默认为null，长度为0。
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、rm
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz13" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、`s := arr[startIndex:endIndex]`将arr中从下标startIndex到endIndex-1下的元素创建为一个新的切片。
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、mkdir
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">19、数据库，简而言之可视为电子化的文件柜——存储电子文件的处所，用户可以对文件中的数据进行新增、查询、更新、删除等操作。数据库（DB），数据库系统（DBS）和数据库管理系统（DBMS）之间的关系是什么？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、DBS包括DB和DBMS
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、DBMS包括DB和DBS
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、DB包括DBS和DBMS
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、DBS就是DB，也就是DBMS
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz13" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、如果想增加切片的容量，我们必须创建一个新的更大的切片并把原分片的内容都拷贝过来。
                             </label>
                         </li>
 
                     </ul>
 
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">14、用一条指令实现将寄存器BX和SI中的内容相加，结果送入AX中，这条指令是？</div>
+                    <ul class="mdui-list ">
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">20、SQL Server 是一个关系数据库管理系统，它最初是由Microsoft Sybase 和Ashton-Tate三家公司共同开发的。而SQL Server 2000是基于什么的关系数据库管理系统？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、B/S模式
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz14" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、`ADD AX，[SI][BX]`
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、C/S模式
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz14" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、`MOV AX，[BX+SI]`
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、SQL模式
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz14" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、`AND AX，[BX+SI]`
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、以上都不是
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">21、21.下面删除表geek中“姓名”为“吉吉国王”记录的命令是</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、`DELETE FROM geek WHERE姓名＝‘吉吉国王’`
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、`DELETE姓名＝‘吉吉国王’`
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、`DROP 姓名＝‘吉吉国王’`
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、`DROP FROM geek WHERE 姓名＝‘吉吉国王’`
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz14" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、`LEA AX，[BX][SI]`
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">22、吉吉国王最近在浏览网页时，经常出现HTTP重定向，请问HTTP请求中，重定向的相应代码是什么？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">15、在8086汇编语言中，程序刚开始执行时，[CS:IP]指向？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、200
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、303
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz15" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、程序的最后一个语句
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、404
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz15" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、程序的数据段
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、502
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz15" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、程序的第一个语句
                             </label>
                         </li>
 
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">23、在HTTP/3.0协议草案中，阐述HTTP将基于QUIC协议。请问QUIC协议基于的UDP协议中文名称叫什么？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、传输控制协议
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、超文本传输协议
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、用户数据报协议
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、上传下载协议
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz15" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、存储计算机IP地址的内存地址
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">24、IP地址是IP协议提供的一种统一的地址格式，它为互联网上的每一个网络和每一台主机分配一个逻辑地址，以此来屏蔽物理地址的差异。IP地址有很多，以下IP地址是A类IP地址的是什么？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">16、现在人们大都习惯使用图形化的操作界面(windows)，而一些高端程序员则喜欢使用Linux，请问在Linux中使用vim打开文件时，应按哪个键进入插入模式？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、192.168.1.1
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz16" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、Ctrl
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、255.0.0.0
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz16" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、tab
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、192.16.32.64
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz16" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、i
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、10.66.23.77
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">25、没有防火墙，电脑很容易被黑客攻击，关于防火墙的说法，下列正确的是什么？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、防火墙从本质上讲使用的是一种过滤技术。
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、防火墙对大多数病毒有预防的能力。
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、防火墙也可以防止计算机过热起火。
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、防火墙可以阻断攻击，也能消灭攻击源。
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz16" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、shift
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">26、在使用计算机的时候，不可能不注意安全，计算机安全属性不包括什么？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">17、最近ZZH在使用Linux的过程中看见了一个一个权限为0764的文件，他属于其他用户（非属主且属组）可以对它进行以下哪个操作？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、可用性和可审性
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz17" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、读
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、可判断性和可靠性
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz17" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、写
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、完整性和可审性
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz17" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、执行
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、保密性和可控性
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">27、在使用电脑是，电脑的访问控制根据应用环境不同，可分为三种，但其中不包括什么？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、外存访问控制
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、主机、操作系统访问控制
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、网络访问控制
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、应用程序访问控制
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz17" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、修改
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">28、28.这是一道英语题，不会任何编程知识就能做，assembler的中文意思是什么？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">18、在Windows中只需“右键”->“新建”->“文件夹”即可新创建一个文件夹，在Linux中，哪条命令用于新建空文件夹？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、解释程序
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz18" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、ls
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、汇编程序
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz18" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、cd
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、连接程序
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz18" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、rm
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、装入程序
-                            </label>
-                        </li>
-
-                    </ul>
-
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">29、人工智能、神经网络现在已经成为研究的热点。而对于一个基本的CNN网络，常使用什么手写数字训练集来判断它的性能？</div>
-                    <ul class="mdui-list">
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、MNIST
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、CNMData
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、DNPSR
-                            </label>
-                        </li>
-
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、HandNumbers
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz18" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、mkdir
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">30、相信大家都知道比特币是个很赚钱的东西，它是基于区块链的，以下哪个不是区块链的特征？</div>
-                    <ul class="mdui-list">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">19、数据库，简而言之可视为电子化的文件柜——存储电子文件的处所，用户可以对文件中的数据进行新增、查询、更新、删除等操作。数据库（DB），数据库系统（DBS）和数据库管理系统（DBMS）之间的关系是什么？</div>
+                    <ul class="mdui-list ">
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="A"/>
-                                <i class="mdui-radio-icon"></i>A、去中心化
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz19" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、DBS包括DB和DBMS
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="B"/>
-                                <i class="mdui-radio-icon"></i>B、开放性
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz19" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、DBMS包括DB和DBS
                             </label>
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="C"/>
-                                <i class="mdui-radio-icon"></i>C、区域性
-                            </label>
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz19" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、DB包括DBS和DBMS
                         </li>
 
-                        <li class="mdui-list-item">
-                            <label class="mdui-radio">
-                                <input type="radio" name="t1" value="D"/>
-                                <i class="mdui-radio-icon"></i>D、匿名性
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz19" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、DBS就是DB，也就是DBMS
                             </label>
                         </li>
 
                     </ul>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-display-1">二、简答题（本大题共3小题，每小题10分，共30分。）</div>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">1、请简述Apache Licence、GPL、MIT开源协议的区别。</div>
-                    <div class="mdui-textfield mdui-textfield-floating-label">
-                        <label class="mdui-textfield-label">Answer</label>
-                        <textarea class="mdui-textfield-input" maxlength="999"></textarea>
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">20、SQL Server 是一个关系数据库管理系统，它最初是由Microsoft Sybase 和Ashton-Tate三家公司共同开发的。而SQL Server 2000是基于什么的关系数据库管理系统？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz20" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、B/S模式
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz20" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、C/S模式
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz20" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、SQL模式
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz20" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、以上都不是
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">21、21.下面删除表geek中“姓名”为“吉吉国王”记录的命令是</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz21" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、`DELETE FROM geek WHERE姓名＝‘吉吉国王’`
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz21" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、`DELETE姓名＝‘吉吉国王’`
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz21" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、`DROP 姓名＝‘吉吉国王’`
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz21" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、`DROP FROM geek WHERE 姓名＝‘吉吉国王’`
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">22、吉吉国王最近在浏览网页时，经常出现HTTP重定向，请问HTTP请求中，重定向的相应代码是什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz22" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、200
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz22" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、303
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz22" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、404
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz22" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、502
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">23、在HTTP/3.0协议草案中，阐述HTTP将基于QUIC协议。请问QUIC协议基于的UDP协议中文名称叫什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz23" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、传输控制协议
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz23" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、超文本传输协议
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz23" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、用户数据报协议
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz23" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、上传下载协议
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">24、IP地址是IP协议提供的一种统一的地址格式，它为互联网上的每一个网络和每一台主机分配一个逻辑地址，以此来屏蔽物理地址的差异。IP地址有很多，以下IP地址是A类IP地址的是什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz24" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、192.168.1.1
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz24" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、255.0.0.0
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz24" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、192.16.32.64
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz24" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、10.66.23.77
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">25、没有防火墙，电脑很容易被黑客攻击，关于防火墙的说法，下列正确的是什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz25" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、防火墙从本质上讲使用的是一种过滤技术。
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz25" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、防火墙对大多数病毒有预防的能力。
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz25" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、防火墙也可以防止计算机过热起火。
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz25" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、防火墙可以阻断攻击，也能消灭攻击源。
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">26、在使用计算机的时候，不可能不注意安全，计算机安全属性不包括什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz26" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、可用性和可审性
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz26" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、可判断性和可靠性
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz26" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、完整性和可审性
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz26" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、保密性和可控性
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">27、在使用电脑是，电脑的访问控制根据应用环境不同，可分为三种，但其中不包括什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz27" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、外存访问控制
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz27" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、主机、操作系统访问控制
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz27" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、网络访问控制
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz27" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、应用程序访问控制
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">28、这是一道英语题，不会任何编程知识就能做，assembler的中文意思是什么？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz28" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、解释程序
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz28" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、汇编程序
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz28" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、连接程序
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz28" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、装入程序
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">29、人工智能、神经网络现在已经成为研究的热点。而对于一个基本的CNN网络，常使用什么手写数字训练集来判断它的性能？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz29" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、MNIST
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz29" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、CNMData
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz29" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、DNPSR
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz29" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、HandNumbers
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">30、相信大家都知道比特币是个很赚钱的东西，它是基于区块链的，以下哪个不是区块链的特征？</div>
+                    <ul class="mdui-list ">
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz30" value="A"/>
+                                <i class="mdui-radio-icon "></i>A、去中心化
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz30" value="B"/>
+                                <i class="mdui-radio-icon "></i>B、开放性
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz30" value="C"/>
+                                <i class="mdui-radio-icon "></i>C、区域性
+                            </label>
+                        </li>
+
+                        <li class="mdui-list-item ">
+                            <label class="mdui-radio ">
+                                <input type="radio " name="xz30" value="D"/>
+                                <i class="mdui-radio-icon "></i>D、匿名性
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-display-1 ">二、简答题（本大题共3小题，每小题10分，共30分。）</div>
+
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">1、请简述Apache Licence、GPL、MIT开源协议的区别。</div>
+                    <div class="mdui-textfield mdui-textfield-floating-label ">
+                        <label class="mdui-textfield-label ">Answer</label>
+                        <textarea class="mdui-textfield-input " maxlength="999 "></textarea>
                     </div>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">2、数据结构队列和栈的特点是什么？简述如何使用用两个栈实现一个队列。</div>
-                    <div class="mdui-textfield mdui-textfield-floating-label">
-                        <label class="mdui-textfield-label">Answer</label>
-                        <textarea class="mdui-textfield-input" maxlength="999"></textarea>
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">2、数据结构队列和栈的特点是什么？简述如何使用用两个栈实现一个队列。</div>
+                    <div class="mdui-textfield mdui-textfield-floating-label ">
+                        <label class="mdui-textfield-label ">Answer</label>
+                        <textarea class="mdui-textfield-input " maxlength="999 "></textarea>
                     </div>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">3、简述can的数据包组成。</div>
-                    <div class="mdui-textfield mdui-textfield-floating-label">
-                        <label class="mdui-textfield-label">Answer</label>
-                        <textarea class="mdui-textfield-input" maxlength="999"></textarea>
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">3、简述can的数据包组成。</div>
+                    <div class="mdui-textfield mdui-textfield-floating-label ">
+                        <label class="mdui-textfield-label ">Answer</label>
+                        <textarea class="mdui-textfield-input " maxlength="999 "></textarea>
                     </div>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-display-1">三、编程题（本大题10分。）</div>
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-display-1 ">三、编程题（本大题10分。）</div>
 
-                    <div style="width: auto;height:25px"></div>
-                    <div class="mdui-typo-headline">题目描述：</div>
-                    <div class="mdui-typo-title">烽火台是重要的军事防御设施，一般建在交通要道或险要处。一旦有军情发生，则白天用浓烟，晚上有火光传递军情。 在某两个城市之间有n座烽火台，每个烽火台发出信号都有一定的代价。为了使情报准确传递，在连续m个烽火台中至少要有一个发出信号。现在输入n,m和每个烽火台的代价，请计算总共最少的代价在两城市之间来准确传递情报。
-                        <div style="width: auto;height:25px"></div>
-                        <div class="mdui-typo">
+                    <div style="width: auto;height:25px "></div>
+                    <div class="mdui-typo-headline ">题目描述：</div>
+                    <div class="mdui-typo-title ">烽火台是重要的军事防御设施，一般建在交通要道或险要处。一旦有军情发生，则白天用浓烟，晚上有火光传递军情。 在某两个城市之间有n座烽火台，每个烽火台发出信号都有一定的代价。为了使情报准确传递，在连续m个烽火台中至少要有一个发出信号。现在输入n,m和每个烽火台的代价，请计算总共最少的代价在两城市之间来准确传递情报。
+                        <div style="width: auto;height:25px "></div>
+                        <div class="mdui-typo ">
                             <pre>
-            ### 输入格式
-
-            第一行是n,m，表示n个烽火台和连续烽火台数m；
-                    
+            输入格式
+            第一行是n,m，表示n个烽火台和连续烽火台数m；         
             第二行n个整数表示每个烽火台的代价ai。
-
-            ### 输出格式
-
+            输出格式
             输出仅一个整数，表示最小代价。
-
-            ### 样例输入
-
+            样例输入
                 5 3
                 1 2 5 6 2
-
-            ### 样例输出
-
-                        4
-
-             ### 样例说明
+            样例输出
+                4
+            样例说明
 
             在第2,5号烽火台上发信号。
-
-            ### 数据范围</pre>
+                            </pre>
                         </div>
 
-                        <div class="mdui-textfield mdui-textfield-floating-label">
-                            <div class="mdui-typo">
-                                <pre><textarea class="mdui-textfield-input" rows="18">在此输入</textarea>
+                        <div class="mdui-textfield mdui-textfield-floating-label ">
+                            <div class="mdui-typo ">
+                                <pre><textarea class="mdui-textfield-input " rows="18 ">在此输入</textarea>
                             </pre>
                             </div>
                         </div>
 
         </form>
         </div>
-        <div style="width: auto;height:25px"></div>
+        <div style="width: auto;height:25px "></div>
         </div>
 
         <!--—————————— 主部分 ——————————-->
@@ -1182,8 +1231,8 @@ var a=new Date().getMonth();</pre>
 
         <!--—————————— 页底 ——————————-->
 
-        <div class="mdui-bottom-nav mdui-shadow-12" style="background-color: rgb(201, 201, 201); text-align: center;height: 24px;">
-            <div class=" mdui-typo-subheading-opacity">Copyright (c) 2019 DEZALER</div>
+        <div class="mdui-bottom-nav mdui-shadow-12 " style="background-color: rgb(201, 201, 201); text-align: center;height: 24px; ">
+            <div class=" mdui-typo-subheading-opacity ">Copyright (c) 2019 DEZALER</div>
         </div>
 
         <!--—————————— 页底 ——————————-->
@@ -1192,12 +1241,12 @@ var a=new Date().getMonth();</pre>
 
         <!--—————————— 提示框 ——————————-->
 
-        <div class="mdui-dialog" id="about">
-            <div class="mdui-dialog-title">Copyright (c) 2019 江苏省南通中学极客社</div>
-            <div class="mdui-dialog-content">制作人员：
-                <a href="https://github.com/EG01STAL" class="mdui-btn" target="_blank"><del>@熬夜爆肝的LMJ</del></a>
+        <div class="mdui-dialog " id="about ">
+            <div class="mdui-dialog-title ">Copyright (c) 2019 江苏省南通中学极客社</div>
+            <div class="mdui-dialog-content ">制作人员：
+                <a href="https://github.com/EG01STAL " class="mdui-btn " target="_blank "><del>@熬夜爆肝的LMJ</del></a>
             </div>
-            <div class="mdui-dialog-actions">
+            <div class="mdui-dialog-actions ">
                 <button class="mdui-btn mdui-ripple " mdui-dialog-close>close</button>
             </div>
         </div>
